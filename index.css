@@ -1,0 +1,182 @@
+/* library*/
+@import "https://unpkg.com/open-props";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+li, a{
+    font-weight: 500;
+    font-size: 13px;
+    color: aliceblue;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('Website/cairo.jpg');
+    background-position: center;
+    position: relative;
+    background-size:cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{ 
+    cursor: pointer;
+    color: whitesmoke;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.nav_links{
+    text-align: right;
+    flex: 1;
+}
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 15px;
+
+}
+.nav_links li a:hover{
+    color: #f9347c;
+}
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 15px 0 40px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+/*featured events*/
+
+.featured_events h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgba(5, 8, 58, 0.922);
+    justify-content: initial;
+}
+.events{
+    display: grid;
+    gap: var(--size-6);
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow-x: auto; /*scorable bar*/
+    overscroll-behavior-inline: contain;
+    padding: 0 var(--size-2) var(--size-2) ;
+    overflow: hidden;
+}
+
+.event {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--size-2);
+    padding: var(--size-2);
+    background: var(--surface-2);
+    border-radius: var(--raius-2);
+    box-shadow: var(--shadow-4);
+}
+.event > img{
+    inline-size: 100%;
+    aspect-ratio: 8/9;
+    object-fit: cover;
+
+}
+
+.event h4, p{
+    color:rgba(4, 5, 28, 0.922);
+}
+.event h4{
+    font-size: 18px;
+}
+
+/* snaps smoothly*/
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--size-2);
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+.featured_events .events .event .button {
+    background-color:  rgba(4, 5, 28, 0.922);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 40px;
+    cursor: pointer;
+}
+
+  /* brief info section*/
+
+  .brief{
+    background-color: rgba(5, 8, 58, 0.922);
+    margin-top: 10px;
+    padding-bottom: 70px;
+
+  }
+.top{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    padding-top: 90px;
+}
+.title{
+    transition: background .3s,border .3s,border-radius .3s,
+    box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title .h4{
+    color: #f9347c;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.description p{ 
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    line-height: 1.8em;
+}
+.info{
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}

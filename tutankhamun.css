@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  rgba(5, 8, 58, 0.922)e;
+} 
+
+/*Header nav bar*/
+li, a{
+    font-weight: 500;
+    font-size: 13px;
+    color: aliceblue;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    min-height: 10vh;
+    background-color: rgba(4, 5, 28, 0.922);
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{ 
+    cursor: pointer;
+    color: whitesmoke;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.nav_links{
+    text-align: right;
+    flex: 1;
+}
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+
+}
+.nav_links li a:hover{
+    color: rgb(224, 75, 105);
+}
+
+/*page*/
+.poster{
+    display: inline-block;
+}
+.poster img{
+    display: inline-block;
+    align-items: first baseline;
+    width: 600px;
+    height: 700px;
+}
+
+.block{
+    display: inline-block;
+}
+.images img{
+    display: inline-block;
+    width: 910px;
+    height: 348px;
+}
+
+/* participant*/
+.participant{
+    margin: 20px 0px 10px 50px;
+}
+
+.participant .count, h3{
+    display: inline;
+}
+
+.participant .count{
+    margin-right: 2px;
+    background-color:#f9347c;
+    padding: 5px;
+}
+
+/*brief info section*/
+
+.brief h1,p{
+    text-align: center;
+    font-size: 16px;
+    color:  rgba(4, 5, 28, 0.922);
+    line-height: 2rem;
+
+}
+.brief h1{
+    padding: 20px;
+    font-size: 30px;
+}
+.p{
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+    line-height: 2rem;
+    color: #f9347c;
+    font-weight: bold;
+}
+
+.details p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8rem;
+    color: #000;
+    display: inline;
+}
+
+.details i{
+    margin-left: 50px;
+    color: #f9347c;
+    padding-right: 10px;
+}
+
+
+.text{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+hr{
+    border: 1.8px solid ;
+    border-radius: 2px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*Comments section*/
+
+.comments h1{
+    text-align: center;
+    font-size: xx-large;
+    color:  #f9347c;
+    padding-top: 30px;
+    
+}
+
+.container
+{
+    margin: 3rem;
+    width: 800px;
+    border: 2px solid transparent;
+    padding: 15px 10px;
+   margin-left: 22%;
+   background-color: transparent;
+}
+.container h2
+{
+    text-align: center;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+.form_info textarea, input
+{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #dedada;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+}
+
+button
+{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit
+{
+    color: #fff;
+    background-color: #f9347c
+}
+button
+{
+    color: #7d7979;
+    background-color: transparent
+}
+
+/*comment card*/
+
+.comments{
+    background-color: rgba(5, 8, 58, 0.922);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.Ccontainer{
+    width: min(60%, 1000px);
+    margin: 3rem auto;
+    height: 50px;
+}
+
+.commentcontainer{
+    position: relative;
+}
+
+.commentcontainer::before{
+    content: "";
+    background-color: rgb(170, 170, 170);
+    position: absolute;
+    min-height: 100%;
+    width: 1px;
+    left: -10px;
+}
+
+.commentcard{
+    padding: 6px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+    min-width: 100%;
+}
+
+.commentcard .username{
+    color: #aaa;
+    margin: 10px;
+    font-size: 16px;
+}
+.commentcard .comment{
+    margin: 2px 10px;
+    font-size: 18px;
+    text-align: start;
+}
+
+.fas fa-heart{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #eee;
+}
+
+.fas fa-heart .fas.positive{
+    color: #ffadad;
+}
+
+.time{
+    display: flex;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}

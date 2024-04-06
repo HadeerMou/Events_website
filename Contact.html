@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="This is Cultural Activities Website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--compatible with different devices-->
+        <title>Cultural Activities</title>
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <script src="contact.js"></script>
+        <script src="https://kit.fontawesome.com/3c4d63ff22.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 class="logo">DISCOVERIT</h3>
+                <ul class="nav_links">
+                    <li><a href="index.html">HomePage</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+
+        </header>
+        <h1><span>Contact</span> us </h1>
+        <section class="contactinfo">
+            <section class="contacts">
+                <div class="ctitle">
+                    <h4>Get In Touch</h4>
+                </div>
+                <div class="contact_details">
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>First Settlement, Eastern Ring Road, New Cairo City, Cairo</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Tel: +20 2 3534 4239</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@discoverit.com</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="social">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p>Discoverit</p>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Discoverit</p>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p>Discoverit</p>
+                    </div>
+                </div>
+                
+            </section>
+        </section>
+
+        <!--Contact form-->
+        <div class="contact">
+            <form id="form" action="">
+                <div class="inputBox">
+                    <input id="name" type="text" placeholder="name" required>
+                    <input id="email" type="email" placeholder="email" type="email" required>
+                    <div id="error"></div>
+
+                </div>
+                <div class="inputBox">
+                    <input id="number" type="number" placeholder="number" type="number" >
+                    <input id="subject" type="text" placeholder="subject" required>
+                    <div id="error"></div>
+
+                </div>
+                <textarea name="" placeholder="Your message" id="message" cols="30" rows="10" required></textarea>
+                <button type="submit">send message</button>
+            </form>
+        </div>
+    </body>
+</html>
